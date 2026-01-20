@@ -1,98 +1,101 @@
 <!DOCTYPE html>
-<html>
-<head> </title>
-    <head>
-    <title>мой блог</title>
-</head>
-    <title>моя презентация</title>
-</head>
-<body>
-<h2> 01.12.2025</h2>
-<img src=“Icons/<a href="https://www.flaticon.com/ru/free-icons/-" title="новый год иконки">Новый год иконки от Pixelmeetup - Flaticon</a>.png” alt=“Новый год”>
-Поздравление с Наступающим 2026 годом читайте <a href=“Congratulations2026.html”> здесь.</a>
-<h2> 15 октября , 2025</h2>
-<p>
-Я сделала Новогодние кроссворды для сайта <a href=“http://адрес сайта друга”  title=“Блог моего друга”Сайт моего друга</a>
-</p>
-<h2> 1 сентября , 2025</h2>
-<blockquote>Путешествие в тысячу миль начинается с одного шага (Лао Цзы) </blockquote>
-<p>
-Оставляю в прошлом скучную неинтересную локальную файловую систему ради Всемирной паутины.
-</p>
-<a href="https://www.flaticon.com/ru/free-icons/-" title="новый год иконки">Новый год иконки от BZZRINCANTATION - Flaticon</a>
-</body>
-<body>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Решение шифров Цезаря</title>
-</head>
-    <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
-<body style="background:#4CAF50;margin:0;height:100vh">
-<p>19 января 2026 г.</p>
-</body>
-</html>
-</html>
-<body>
-<p><strong>Дата:</strong> 19 января 2026 г.</p>
-
-<h3>1. Ключи шифра Цезаря</h3>
-<p>а. АПЕЛЬСИН → САЦЬНВЩЮ → ключ <strong>k = 17</strong></p>
-<p>б. АБРИКОС → ЫЬЛГЕЙМ → ключ <strong>k = 27</strong></p>
-
-<h3>2. Расшифровка</h3>
-<p>а. ФХНЗКЧ → <strong>ПРИВЕТ</strong> (k = 5)</p>
-<p>б. ЦЩЕБФ → <strong>ВЕСНА</strong> (k = 20)</p>
-
-<h3>3. Шифрование</h3>
-<p>РАСУЛОВА (k = 10) → <strong>БКИЕЪЧКК</strong></p>
-</body>
-</html>
-<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>RSA Пример</title>
+  <title>Мой блог</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
-    .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    h1 { color: #333; }
-    .info { margin: 15px 0; }
-    code { background: #eee; padding: 2px 6px; border-radius: 4px; }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #d0eaff; /* Приглушённый небесно-голубой */
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+    }
+    h1, h2, h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.8em;
+    }
+    code {
+      background: #c0dfff;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    blockquote {
+      font-style: italic;
+      margin: 1em 0;
+      padding-left: 1em;
+      border-left: 3px solid #7aa9ff;
+    }
+    a {
+      color: #0056b3;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>RSA — Пример шифрования и расшифровки</h1>
 
-    <div class="info">
-      <p><strong>Текущая дата:</strong> <span id="current-date"></span></p>
-      <p><strong>Закрытый ключ (d):</strong> <code>3</code></p>
-      <p><strong>Открытый ключ (e, n):</strong> <code>e = 3</code>, <code>n = 15</code></p>
-    </div>
+  <!-- Блог -->
+  <h1>Мой блог</h1>
 
-    <h2>Шифрование</h2>
-    <p>Пусть сообщение <code>m = 2</code> («2» = «анализ готов»)</p>
-    <p>Условие: <code>m &lt; n</code> → <code>2 &lt; 15</code></p>
-    <p>Формула шифрования:<br>
-       <code>C = m<sup>e</sup> mod n = 2<sup>3</sup> mod 15 = 8 mod 15 = 8</code></p>
-    <p>→ Шифротекст <code>C = 8</code></p>
+  <h2>01.12.2025</h2>
+  <p>
+    <img src="Icons/новый_год.png" alt="Новый год" style="max-width:100px;">
+    Поздравление с Наступающим 2026 годом читайте <a href="Congratulations2026.html">здесь</a>.
+  </p>
 
-    <h2>Расшифровка</h2>
-    <p>Формула расшифровки:<br>
-       <code>M = C<sup>d</sup> mod n = 8<sup>3</sup> mod 15 = 512 mod 15 = 2</code></p>
-    <p>Исходное сообщение восстановлено!</p>
+  <h2>15 октября, 2025</h2>
+  <p>
+    Я сделала Новогодние кроссворды для сайта <a href="http://адрес-сайта-друга" title="Блог моего друга">Сайт моего друга</a>.
+  </p>
 
-    <h2>В реальности</h2>
-    <p>Число <code>n</code> — это произведение двух больших простых чисел и содержит <strong>600+ десятичных цифр</strong>.</p>
-  </div>
+  <h2>1 сентября, 2025</h2>
+  <blockquote>Путешествие в тысячу миль начинается с одного шага (Лао Цзы)</blockquote>
+  <p>
+    Оставляю в прошлом скучную неинтересную локальную файловую систему ради Всемирной паутины.
+  </p>
+
+  <!-- Шифр Цезаря -->
+  <h1>Решение шифров Цезаря</h1>
+  <p><strong>Дата:</strong> 19 января 2026 г.</p>
+
+  <h3>1. Ключи шифра Цезаря</h3>
+  <p>а. АПЕЛЬСИН → САЦЬНВЩЮ → ключ <strong>k = 17</strong></p>
+  <p>б. АБРИКОС → ЫЬЛГЕЙМ → ключ <strong>k = 27</strong></p>
+
+  <h3>2. Расшифровка</h3>
+  <p>а. ФХНЗКЧ → <strong>ПРИВЕТ</strong> (k = 5)</p>
+  <p>б. ЦЩЕБФ → <strong>ВЕСНА</strong> (k = 20)</p>
+
+  <h3>3. Шифрование</h3>
+  <p>РАСУЛОВА (k = 10) → <strong>БКИЕЪЧКК</strong></p>
+
+  <!-- RSA Пример -->
+  <h1>RSA — Пример шифрования и расшифровки</h1>
+
+  <p><strong>Текущая дата:</strong> <span id="current-date"></span></p>
+  <p><strong>Закрытый ключ (d):</strong> <code>3</code></p>
+  <p><strong>Открытый ключ (e, n):</strong> <code>e = 3</code>, <code>n = 15</code></p>
+
+  <h2>Шифрование</h2>
+  <p>Пусть сообщение <code>m = 2</code> («2» = «анализ готов»)</p>
+  <p>Условие: <code>m &lt; n</code> → <code>2 &lt; 15</code></p>
+  <p>Формула шифрования:<br>
+     <code>C = m<sup>e</sup> mod n = 2<sup>3</sup> mod 15 = 8 mod 15 = 8</code></p>
+  <p>→ Шифротекст <code>C = 8</code></p>
+
+  <h2>Расшифровка</h2>
+  <p>Формула расшифровки:<br>
+     <code>M = C<sup>d</sup> mod n = 8<sup>3</sup> mod 15 = 512 mod 15 = 2</code></p>
+  <p>Исходное сообщение восстановлено!</p>
+
+  <h2>В реальности</h2>
+  <p>Число <code>n</code> — это произведение двух больших простых чисел и содержит <strong>600+ десятичных цифр</strong>.</p>
 
   <script>
-    // Устанавливаем текущую дату
     document.getElementById('current-date').textContent = new Date().toLocaleDateString('ru-RU');
   </script>
+
 </body>
 </html>
