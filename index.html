@@ -51,3 +51,48 @@
 <p>РАСУЛОВА (k = 10) → <strong>БКИЕЪЧКК</strong></p>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>RSA Пример</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
+    .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1 { color: #333; }
+    .info { margin: 15px 0; }
+    code { background: #eee; padding: 2px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>RSA — Пример шифрования и расшифровки</h1>
+
+    <div class="info">
+      <p><strong>Текущая дата:</strong> <span id="current-date"></span></p>
+      <p><strong>Закрытый ключ (d):</strong> <code>3</code></p>
+      <p><strong>Открытый ключ (e, n):</strong> <code>e = 3</code>, <code>n = 15</code></p>
+    </div>
+
+    <h2>Шифрование</h2>
+    <p>Пусть сообщение <code>m = 2</code> («2» = «анализ готов»)</p>
+    <p>Условие: <code>m &lt; n</code> → <code>2 &lt; 15</code></p>
+    <p>Формула шифрования:<br>
+       <code>C = m<sup>e</sup> mod n = 2<sup>3</sup> mod 15 = 8 mod 15 = 8</code></p>
+    <p>→ Шифротекст <code>C = 8</code></p>
+
+    <h2>Расшифровка</h2>
+    <p>Формула расшифровки:<br>
+       <code>M = C<sup>d</sup> mod n = 8<sup>3</sup> mod 15 = 512 mod 15 = 2</code></p>
+    <p>Исходное сообщение восстановлено!</p>
+
+    <h2>В реальности</h2>
+    <p>Число <code>n</code> — это произведение двух больших простых чисел и содержит <strong>600+ десятичных цифр</strong>.</p>
+  </div>
+
+  <script>
+    // Устанавливаем текущую дату
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString('ru-RU');
+  </script>
+</body>
+</html>
