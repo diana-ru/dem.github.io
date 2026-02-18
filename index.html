@@ -118,4 +118,25 @@
   </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты</title>
+</head>
+<body>
+    <p id="current-date"></p>
+    <pre>
+Топ-3 предсказаний:
+running shoe: 99.45%
+shoe store: 0.27%
+clogs: 0.15%
+    </pre>
 
+    <script>
+        // Автоматическая вставка сегодняшней даты
+        const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('ru-RU', dateOptions);
+    </script>
+</body>
+</html>
